@@ -1,0 +1,561 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  21/Mar/2024  23:08:41
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =  E:\STM32_LEDANDBUTTONSTL\Debug\Exe\capture_ir.out
+#    Map file     =  E:\STM32_LEDANDBUTTONSTL\Debug\List\capture_ir.map
+#    Command line =
+#        -f C:\Users\thinh\AppData\Local\Temp\EWE59A.tmp
+#        (E:\STM32_LEDANDBUTTONSTL\Debug\Obj\common.o
+#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\cortex_m3.o
+#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\gpio.o
+#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\main.o
+#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\startup_stm32f103cx.o
+#        --no_out_extension -o
+#        E:\STM32_LEDANDBUTTONSTL\Debug\Exe\capture_ir.out --map
+#        E:\STM32_LEDANDBUTTONSTL\Debug\List\capture_ir.map --config
+#        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\ST\stm32f103x8.icf" --semihosting --entry
+#        __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x800'0000 { ro section .intvec };
+"P1":  place in [from 0x800'0000 to 0x800'ffff] { ro };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 2K, alignment = 8 { };
+"P2":  place in [from 0x2000'0000 to 0x2000'4fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0xec
+  .intvec            ro code   0x800'0000    0xec  startup_stm32f103cx.o [1]
+                             - 0x800'00ec    0xec
+
+"P1":                                       0x318
+  .text              ro code   0x800'00ec   0x118  main.o [1]
+  .text              ro code   0x800'0204    0x66  gpio.o [1]
+  .text              ro code   0x800'026a    0x2e  copy_init3.o [3]
+  .text              ro code   0x800'0298    0x28  data_init.o [3]
+  .iar.init_table    const     0x800'02c0    0x14  - Linker created -
+  .text              ro code   0x800'02d4    0x1e  cmain.o [3]
+  .text              ro code   0x800'02f2     0x4  low_level_init.o [2]
+  .text              ro code   0x800'02f6     0x4  exit.o [2]
+  .text              ro code   0x800'02fc     0xa  cexit.o [3]
+  .text              ro code   0x800'0308    0x14  exit.o [4]
+  .text              ro code   0x800'031c     0xc  cstartup_M.o [3]
+  .text              ro code   0x800'0328     0x8  startup_stm32f103cx.o [1]
+  Initializer bytes  const     0x800'0330     0x8  <for P2-1>
+  .text              ro code   0x800'0338     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'033c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0340     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0344     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0348     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'034c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0350     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0354     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0358     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'035c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0360     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0364     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0368     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'036c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0370     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0374     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0378     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'037c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0380     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0384     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0388     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'038c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0390     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0394     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0398     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'039c     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03a0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03a4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03a8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03ac     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03b0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03b4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03b8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03bc     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03c0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03c4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03c8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03cc     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03d0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03d4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03d8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03dc     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03e0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03e4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03e8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03ec     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03f0     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03f4     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03f8     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'03fc     0x4  startup_stm32f103cx.o [1]
+  .text              ro code   0x800'0400     0x4  startup_stm32f103cx.o [1]
+  .rodata            const     0x800'0404     0x0  copy_init3.o [3]
+                             - 0x800'0404   0x318
+
+"P2", part 1 of 2:                            0x8
+  P2-1                        0x2000'0000     0x7  <Init block>
+    .bss             inited   0x2000'0000     0x2  main.o [1]
+    .bss             inited   0x2000'0002     0x2  main.o [1]
+    .data            inited   0x2000'0004     0x1  main.o [1]
+    .bss             inited   0x2000'0005     0x1  main.o [1]
+    .bss             inited   0x2000'0006     0x1  main.o [1]
+                            - 0x2000'0007     0x7
+
+"P2", part 2 of 2:                          0x800
+  CSTACK                      0x2000'0008   0x800  <Block>
+    CSTACK           uninit   0x2000'0008   0x800  <Block tail>
+                            - 0x2000'0808   0x800
+
+Absolute sections, part 1 of 61:             0x50
+  .noinit            uninit   0x4000'0000    0x50  main.o [1]
+                            - 0x4000'0050    0x50
+
+Absolute sections, part 2 of 61:             0x50
+  .noinit            uninit   0x4000'0400    0x50  main.o [1]
+                            - 0x4000'0450    0x50
+
+Absolute sections, part 3 of 61:             0x50
+  .noinit            uninit   0x4000'0800    0x50  main.o [1]
+                            - 0x4000'0850    0x50
+
+Absolute sections, part 4 of 61:             0x28
+  .noinit            uninit   0x4000'2800    0x28  main.o [1]
+                            - 0x4000'2828    0x28
+
+Absolute sections, part 5 of 61:              0xc
+  .noinit            uninit   0x4000'2c00     0xc  main.o [1]
+                            - 0x4000'2c0c     0xc
+
+Absolute sections, part 6 of 61:             0x10
+  .noinit            uninit   0x4000'3000    0x10  main.o [1]
+                            - 0x4000'3010    0x10
+
+Absolute sections, part 7 of 61:             0x24
+  .noinit            uninit   0x4000'3800    0x24  main.o [1]
+                            - 0x4000'3824    0x24
+
+Absolute sections, part 8 of 61:             0x1c
+  .noinit            uninit   0x4000'4400    0x1c  main.o [1]
+                            - 0x4000'441c    0x1c
+
+Absolute sections, part 9 of 61:             0x1c
+  .noinit            uninit   0x4000'4800    0x1c  main.o [1]
+                            - 0x4000'481c    0x1c
+
+Absolute sections, part 10 of 61:            0x24
+  .noinit            uninit   0x4000'5400    0x24  main.o [1]
+                            - 0x4000'5424    0x24
+
+Absolute sections, part 11 of 61:            0x24
+  .noinit            uninit   0x4000'5800    0x24  main.o [1]
+                            - 0x4000'5824    0x24
+
+Absolute sections, part 12 of 61:            0xc0
+  .noinit            uninit   0x4000'6c00    0xc0  main.o [1]
+                            - 0x4000'6cc0    0xc0
+
+Absolute sections, part 13 of 61:             0x8
+  .noinit            uninit   0x4000'7000     0x8  main.o [1]
+                            - 0x4000'7008     0x8
+
+Absolute sections, part 14 of 61:            0x20
+  .noinit            uninit   0x4001'0000    0x20  main.o [1]
+                            - 0x4001'0020    0x20
+
+Absolute sections, part 15 of 61:            0x18
+  .noinit            uninit   0x4001'0400    0x18  main.o [1]
+                            - 0x4001'0418    0x18
+
+Absolute sections, part 16 of 61:            0x1c
+  .noinit            uninit   0x4001'0800    0x1c  main.o [1]
+                            - 0x4001'081c    0x1c
+
+Absolute sections, part 17 of 61:            0x1c
+  .noinit            uninit   0x4001'0c00    0x1c  main.o [1]
+                            - 0x4001'0c1c    0x1c
+
+Absolute sections, part 18 of 61:            0x1c
+  .noinit            uninit   0x4001'1000    0x1c  main.o [1]
+                            - 0x4001'101c    0x1c
+
+Absolute sections, part 19 of 61:            0x1c
+  .noinit            uninit   0x4001'1400    0x1c  main.o [1]
+                            - 0x4001'141c    0x1c
+
+Absolute sections, part 20 of 61:            0x1c
+  .noinit            uninit   0x4001'1800    0x1c  main.o [1]
+                            - 0x4001'181c    0x1c
+
+Absolute sections, part 21 of 61:            0x50
+  .noinit            uninit   0x4001'2400    0x50  main.o [1]
+                            - 0x4001'2450    0x50
+
+Absolute sections, part 22 of 61:            0x50
+  .noinit            uninit   0x4001'2800    0x50  main.o [1]
+                            - 0x4001'2850    0x50
+
+Absolute sections, part 23 of 61:            0x50
+  .noinit            uninit   0x4001'2c00    0x50  main.o [1]
+                            - 0x4001'2c50    0x50
+
+Absolute sections, part 24 of 61:            0x24
+  .noinit            uninit   0x4001'3000    0x24  main.o [1]
+                            - 0x4001'3024    0x24
+
+Absolute sections, part 25 of 61:            0x1c
+  .noinit            uninit   0x4001'3800    0x1c  main.o [1]
+                            - 0x4001'381c    0x1c
+
+Absolute sections, part 26 of 61:            0x94
+  .noinit            uninit   0x4002'0000    0x94  main.o [1]
+                            - 0x4002'0094    0x94
+
+Absolute sections, part 27 of 61:            0x30
+  .noinit            uninit   0x4002'1000    0x30  main.o [1]
+                            - 0x4002'1030    0x30
+
+Absolute sections, part 28 of 61:            0x24
+  .noinit            uninit   0x4002'2000    0x24  main.o [1]
+                            - 0x4002'2024    0x24
+
+Absolute sections, part 29 of 61:             0xc
+  .noinit            uninit   0x4002'3000     0xc  main.o [1]
+                            - 0x4002'300c     0xc
+
+Absolute sections, part 30 of 61:           0xa00
+  .noinit            uninit   0x4200'0000   0xa00  main.o [1]
+                            - 0x4200'0a00   0xa00
+
+Absolute sections, part 31 of 61:           0xa00
+  .noinit            uninit   0x4200'8000   0xa00  main.o [1]
+                            - 0x4200'8a00   0xa00
+
+Absolute sections, part 32 of 61:           0xa00
+  .noinit            uninit   0x4201'0000   0xa00  main.o [1]
+                            - 0x4201'0a00   0xa00
+
+Absolute sections, part 33 of 61:           0x500
+  .noinit            uninit   0x4205'0000   0x500  main.o [1]
+                            - 0x4205'0500   0x500
+
+Absolute sections, part 34 of 61:           0x180
+  .noinit            uninit   0x4205'8000   0x180  main.o [1]
+                            - 0x4205'8180   0x180
+
+Absolute sections, part 35 of 61:           0x200
+  .noinit            uninit   0x4206'0000   0x200  main.o [1]
+                            - 0x4206'0200   0x200
+
+Absolute sections, part 36 of 61:           0x290
+  .noinit            uninit   0x4207'0000   0x290  main.o [1]
+                            - 0x4207'0290   0x290
+
+Absolute sections, part 37 of 61:           0x304
+  .noinit            uninit   0x4208'8000   0x304  main.o [1]
+                            - 0x4208'8304   0x304
+
+Absolute sections, part 38 of 61:           0x304
+  .noinit            uninit   0x4209'0000   0x304  main.o [1]
+                            - 0x4209'0304   0x304
+
+Absolute sections, part 39 of 61:           0x480
+  .noinit            uninit   0x420a'8000   0x480  main.o [1]
+                            - 0x420a'8480   0x480
+
+Absolute sections, part 40 of 61:           0x480
+  .noinit            uninit   0x420b'0000   0x480  main.o [1]
+                            - 0x420b'0480   0x480
+
+Absolute sections, part 41 of 61:          0x1800
+  .noinit            uninit   0x420d'8000  0x1800  main.o [1]
+                            - 0x420d'9800  0x1800
+
+Absolute sections, part 42 of 61:           0x100
+  .noinit            uninit   0x420e'0000   0x100  main.o [1]
+                            - 0x420e'0100   0x100
+
+Absolute sections, part 43 of 61:           0x400
+  .noinit            uninit   0x4220'0000   0x400  main.o [1]
+                            - 0x4220'0400   0x400
+
+Absolute sections, part 44 of 61:           0x300
+  .noinit            uninit   0x4220'8000   0x300  main.o [1]
+                            - 0x4220'8300   0x300
+
+Absolute sections, part 45 of 61:           0x380
+  .noinit            uninit   0x4221'0000   0x380  main.o [1]
+                            - 0x4221'0380   0x380
+
+Absolute sections, part 46 of 61:           0x380
+  .noinit            uninit   0x4221'8000   0x380  main.o [1]
+                            - 0x4221'8380   0x380
+
+Absolute sections, part 47 of 61:           0x380
+  .noinit            uninit   0x4222'0000   0x380  main.o [1]
+                            - 0x4222'0380   0x380
+
+Absolute sections, part 48 of 61:           0x380
+  .noinit            uninit   0x4222'8000   0x380  main.o [1]
+                            - 0x4222'8380   0x380
+
+Absolute sections, part 49 of 61:           0x380
+  .noinit            uninit   0x4223'0000   0x380  main.o [1]
+                            - 0x4223'0380   0x380
+
+Absolute sections, part 50 of 61:           0x810
+  .noinit            uninit   0x4224'8000   0x810  main.o [1]
+                            - 0x4224'8810   0x810
+
+Absolute sections, part 51 of 61:           0x810
+  .noinit            uninit   0x4225'0000   0x810  main.o [1]
+                            - 0x4225'0810   0x810
+
+Absolute sections, part 52 of 61:           0x984
+  .noinit            uninit   0x4225'8000   0x984  main.o [1]
+                            - 0x4225'8984   0x984
+
+Absolute sections, part 53 of 61:           0x290
+  .noinit            uninit   0x4226'0000   0x290  main.o [1]
+                            - 0x4226'0290   0x290
+
+Absolute sections, part 54 of 61:           0x304
+  .noinit            uninit   0x4227'0000   0x304  main.o [1]
+                            - 0x4227'0304   0x304
+
+Absolute sections, part 55 of 61:          0x1280
+  .noinit            uninit   0x4240'0000  0x1280  main.o [1]
+                            - 0x4240'1280  0x1280
+
+Absolute sections, part 56 of 61:           0x600
+  .noinit            uninit   0x4242'0000   0x600  main.o [1]
+                            - 0x4242'0600   0x600
+
+Absolute sections, part 57 of 61:           0x480
+  .noinit            uninit   0x4244'0000   0x480  main.o [1]
+                            - 0x4244'0480   0x480
+
+Absolute sections, part 58 of 61:           0x180
+  .noinit            uninit   0x4246'0000   0x180  main.o [1]
+                            - 0x4246'0180   0x180
+
+Absolute sections, part 59 of 61:             0x4
+  .noinit            uninit   0xe000'e008     0x4  main.o [1]
+                            - 0xe000'e00c     0x4
+
+Absolute sections, part 60 of 61:            0x10
+  .noinit            uninit   0xe000'e010    0x10  main.o [1]
+                            - 0xe000'e020    0x10
+
+Absolute sections, part 61 of 61:           0xe04
+  .noinit            uninit   0xe000'e100   0xe04  main.o [1]
+                            - 0xe000'ef04   0xe04
+
+Unused ranges:
+
+         From           To    Size
+         ----           --    ----
+   0x800'0404   0x800'ffff  0xfbfc
+  0x2000'0808  0x2000'4fff  0x47f8
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8 (114% of destination):
+           0x800'0330   0x8
+    1 destination range, total size 0x7:
+          0x2000'0000   0x7
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                 ro code  ro data  rw data  rw data
+                                                       (abs)
+    ------                 -------  -------  -------  -------
+command line/config:
+    ---------------------------------------------------------
+    Total:
+
+E:\STM32_LEDANDBUTTONSTL\Debug\Obj: [1]
+    gpio.o                     102
+    main.o                     280        7        7   47'856
+    startup_stm32f103cx.o      448
+    ---------------------------------------------------------
+    Total:                     830        7        7   47'856
+
+dl7M_tln.a: [2]
+    exit.o                       4
+    low_level_init.o             4
+    ---------------------------------------------------------
+    Total:                       8
+
+rt7M_tl.a: [3]
+    cexit.o                     10
+    cmain.o                     30
+    copy_init3.o                46
+    cstartup_M.o                12
+    data_init.o                 40
+    ---------------------------------------------------------
+    Total:                     138
+
+shb_l.a: [4]
+    exit.o                      20
+    ---------------------------------------------------------
+    Total:                      20
+
+    Gaps                         4
+    Linker created                       21    2'048
+-------------------------------------------------------------
+    Grand Total:             1'000       28    2'055   47'856
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base    0x800'02c0           --   Gb  - Linker created -
+.iar.init_table$$Limit   0x800'02d4           --   Gb  - Linker created -
+?main                    0x800'02d5          Code  Gb  cmain.o [3]
+ADC1                    0x4001'2400    0x50  Data  Gb  main.o [1]
+ADC1_BITBAND            0x4224'8000   0x810  Data  Gb  main.o [1]
+ADC2                    0x4001'2800    0x50  Data  Gb  main.o [1]
+ADC2_BITBAND            0x4225'0000   0x810  Data  Gb  main.o [1]
+AFIO                    0x4001'0000    0x20  Data  Gb  main.o [1]
+AFIO_BITBAND            0x4220'0000   0x400  Data  Gb  main.o [1]
+BKP                     0x4000'6c00    0xc0  Data  Gb  main.o [1]
+BKP_BITBAND             0x420d'8000  0x1800  Data  Gb  main.o [1]
+BaseProcess              0x800'00f5    0x72  Code  Gb  main.o [1]
+BaseProcess{1}{2}::count_10ms
+                        0x2000'0006     0x1  Data  Lc  main.o [1]
+BaseProcess{1}{2}{5}{6}::count_1s
+                        0x2000'0002     0x2  Data  Lc  main.o [1]
+Button                  0x2000'0000     0x2  Data  Gb  main.o [1]
+CRC                     0x4002'3000     0xc  Data  Gb  main.o [1]
+CRC_BITBAND             0x4246'0000   0x180  Data  Gb  main.o [1]
+CSTACK$$Base            0x2000'0008           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'0808           --   Gb  - Linker created -
+DMA1                    0x4002'0000    0x94  Data  Gb  main.o [1]
+DMA1_BITBAND            0x4240'0000  0x1280  Data  Gb  main.o [1]
+EXTI                    0x4001'0400    0x18  Data  Gb  main.o [1]
+EXTI_BITBAND            0x4220'8000   0x300  Data  Gb  main.o [1]
+FLASH                   0x4002'2000    0x24  Data  Gb  main.o [1]
+FLASH_BITBAND           0x4244'0000   0x480  Data  Gb  main.o [1]
+GPIOA                   0x4001'0800    0x1c  Data  Gb  main.o [1]
+GPIOA_BITBAND           0x4221'0000   0x380  Data  Gb  main.o [1]
+GPIOB                   0x4001'0c00    0x1c  Data  Gb  main.o [1]
+GPIOB_BITBAND           0x4221'8000   0x380  Data  Gb  main.o [1]
+GPIOC                   0x4001'1000    0x1c  Data  Gb  main.o [1]
+GPIOC_BITBAND           0x4222'0000   0x380  Data  Gb  main.o [1]
+GPIOD                   0x4001'1400    0x1c  Data  Gb  main.o [1]
+GPIOD_BITBAND           0x4222'8000   0x380  Data  Gb  main.o [1]
+GPIOE                   0x4001'1800    0x1c  Data  Gb  main.o [1]
+GPIOE_BITBAND           0x4223'0000   0x380  Data  Gb  main.o [1]
+GPIO_Mode                0x800'0205    0x66  Code  Gb  gpio.o [1]
+I2C1                    0x4000'5400    0x24  Data  Gb  main.o [1]
+I2C1_BITBAND            0x420a'8000   0x480  Data  Gb  main.o [1]
+I2C2                    0x4000'5800    0x24  Data  Gb  main.o [1]
+I2C2_BITBAND            0x420b'0000   0x480  Data  Gb  main.o [1]
+IDWG                    0x4000'3000    0x10  Data  Gb  main.o [1]
+IDWG_BITBAND            0x4206'0000   0x200  Data  Gb  main.o [1]
+Led                     0x2000'0005     0x1  Data  Gb  main.o [1]
+NVIC                    0xe000'e100   0xe04  Data  Gb  main.o [1]
+PWR                     0x4000'7000     0x8  Data  Gb  main.o [1]
+PWR_BITBAND             0x420e'0000   0x100  Data  Gb  main.o [1]
+RCC                     0x4002'1000    0x30  Data  Gb  main.o [1]
+RCC_BITBAND             0x4242'0000   0x600  Data  Gb  main.o [1]
+RTC                     0x4000'2800    0x28  Data  Gb  main.o [1]
+RTC_BITBAND             0x4205'0000   0x500  Data  Gb  main.o [1]
+Region$$Table$$Base      0x800'02c0           --   Gb  - Linker created -
+Region$$Table$$Limit     0x800'02d4           --   Gb  - Linker created -
+SCB_ACTLR               0xe000'e008     0x4  Data  Gb  main.o [1]
+SPI1                    0x4001'3000    0x24  Data  Gb  main.o [1]
+SPI1_BITBAND            0x4226'0000   0x290  Data  Gb  main.o [1]
+SPI2                    0x4000'3800    0x24  Data  Gb  main.o [1]
+SPI2_BITBAND            0x4207'0000   0x290  Data  Gb  main.o [1]
+STK                     0xe000'e010    0x10  Data  Gb  main.o [1]
+SysTick_Handler          0x800'00ed     0x8  Code  Gb  main.o [1]
+System                  0x2000'0004     0x1  Data  Gb  main.o [1]
+TIM1                    0x4001'2c00    0x50  Data  Gb  main.o [1]
+TIM1_BITBAND            0x4225'8000   0x984  Data  Gb  main.o [1]
+TIM2                    0x4000'0000    0x50  Data  Gb  main.o [1]
+TIM2_BITBAND            0x4200'0000   0xa00  Data  Gb  main.o [1]
+TIM3                    0x4000'0400    0x50  Data  Gb  main.o [1]
+TIM3_BITBAND            0x4200'8000   0xa00  Data  Gb  main.o [1]
+TIM4                    0x4000'0800    0x50  Data  Gb  main.o [1]
+TIM4_BITBAND            0x4201'0000   0xa00  Data  Gb  main.o [1]
+UART1                   0x4001'3800    0x1c  Data  Gb  main.o [1]
+UART1_BITBAND           0x4227'0000   0x304  Data  Gb  main.o [1]
+UART2                   0x4000'4400    0x1c  Data  Gb  main.o [1]
+UART2_BITBAND           0x4208'8000   0x304  Data  Gb  main.o [1]
+UART3                   0x4000'4800    0x1c  Data  Gb  main.o [1]
+UART3_BITBAND           0x4209'0000   0x304  Data  Gb  main.o [1]
+WWDG                    0x4000'2c00     0xc  Data  Gb  main.o [1]
+WWDG_BITBAND            0x4205'8000   0x180  Data  Gb  main.o [1]
+__cmain                  0x800'02d5          Code  Gb  cmain.o [3]
+__exit                   0x800'0309    0x14  Code  Gb  exit.o [4]
+__iar_copy_init3         0x800'026b    0x2e  Code  Gb  copy_init3.o [3]
+__iar_data_init3         0x800'0299    0x28  Code  Gb  data_init.o [3]
+__iar_program_start      0x800'031d          Code  Gb  cstartup_M.o [3]
+__low_level_init         0x800'02f3     0x4  Code  Gb  low_level_init.o [2]
+__vector_table           0x800'0000          Data  Gb  startup_stm32f103cx.o [1]
+_call_main               0x800'02e1          Code  Gb  cmain.o [3]
+_exit                    0x800'02fd          Code  Gb  cexit.o [3]
+_main                    0x800'02ef          Code  Gb  cmain.o [3]
+exit                     0x800'02f7     0x4  Code  Gb  exit.o [2]
+main                     0x800'0167    0x7a  Code  Gb  main.o [1]
+
+
+[1] = E:\STM32_LEDANDBUTTONSTL\Debug\Obj
+[2] = dl7M_tln.a
+[3] = rt7M_tl.a
+[4] = shb_l.a
+
+  1'000 bytes of readonly  code memory
+     28 bytes of readonly  data memory
+  2'055 bytes of readwrite data memory (+ 47'856 absolute)
+
+Errors: none
+Warnings: none

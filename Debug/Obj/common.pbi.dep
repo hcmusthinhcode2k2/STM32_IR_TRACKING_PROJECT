@@ -1,0 +1,3 @@
+common.pbi: E:\STM32_IR_TRACKING_PROJECT\source\common.c \
+  E:\STM32_LEDANDBUTTONSTL\include\common.h \
+  E:\STM32_LEDANDBUTTONSTL\include\define.h

@@ -1,0 +1,4 @@
+system_stm32f1xx.pbi: F:\5_Video\9_capture_ir\project\include\define.h \
+  F:\5_Video\9_capture_ir\project\include\common.h \
+  F:\5_Video\9_capture_ir\project\include\cortex_m3.h \
+  F:\5_Video\9_capture_ir\project\source\system_stm32f1xx.c
