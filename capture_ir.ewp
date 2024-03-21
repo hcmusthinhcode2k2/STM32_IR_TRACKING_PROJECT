@@ -345,8 +345,8 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>E:\STM32_LEDANDBUTTONSTL\include</state>
-                    <state>E:\STM32_LEDANDBUTTONSTL\source</state>
+                    <state>E:\STM32_IR_TRACKING_PROJECT\include</state>
+                    <state>E:\STM32_IR_TRACKING_PROJECT\source</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>

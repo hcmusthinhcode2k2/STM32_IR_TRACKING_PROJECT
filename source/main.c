@@ -78,7 +78,7 @@ void main()
     Button.Logic = GPIOB.IDR.BITS.b8;
 
     // System Tick Timer Configuration
-    STK.LOAD = 1000; // Load value for 1ms tick
+    STK.LOAD = 5000; // Load value for 1ms tick
     STK.CTRL.BITS.TICK_INT = 1; // Enable SysTick interrupt
     STK.CTRL.BITS.CLK_SOURCE = 1; // Select processor clock
     STK.CTRL.BITS.ENABLE = 1; // Enable SysTick timer

@@ -1,20 +1,20 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.40.1.212/W32 for ARM                  21/Mar/2024  23:08:41
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  21/Mar/2024  23:21:34
 # Copyright 2007-2019 IAR Systems AB.
 #
-#    Output file  =  E:\STM32_LEDANDBUTTONSTL\Debug\Exe\capture_ir.out
-#    Map file     =  E:\STM32_LEDANDBUTTONSTL\Debug\List\capture_ir.map
+#    Output file  =  E:\STM32_IR_TRACKING_PROJECT\Debug\Exe\capture_ir.out
+#    Map file     =  E:\STM32_IR_TRACKING_PROJECT\Debug\List\capture_ir.map
 #    Command line =
-#        -f C:\Users\thinh\AppData\Local\Temp\EWE59A.tmp
-#        (E:\STM32_LEDANDBUTTONSTL\Debug\Obj\common.o
-#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\cortex_m3.o
-#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\gpio.o
-#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\main.o
-#        E:\STM32_LEDANDBUTTONSTL\Debug\Obj\startup_stm32f103cx.o
+#        -f C:\Users\thinh\AppData\Local\Temp\EWAFF7.tmp
+#        (E:\STM32_IR_TRACKING_PROJECT\Debug\Obj\common.o
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\Obj\cortex_m3.o
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\Obj\gpio.o
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\Obj\main.o
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\Obj\startup_stm32f103cx.o
 #        --no_out_extension -o
-#        E:\STM32_LEDANDBUTTONSTL\Debug\Exe\capture_ir.out --map
-#        E:\STM32_LEDANDBUTTONSTL\Debug\List\capture_ir.map --config
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\Exe\capture_ir.out --map
+#        E:\STM32_IR_TRACKING_PROJECT\Debug\List\capture_ir.map --config
 #        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        8.3\arm\config\linker\ST\stm32f103x8.icf" --semihosting --entry
 #        __iar_program_start --vfe --text_out locale)
@@ -417,7 +417,7 @@ command line/config:
     ---------------------------------------------------------
     Total:
 
-E:\STM32_LEDANDBUTTONSTL\Debug\Obj: [1]
+E:\STM32_IR_TRACKING_PROJECT\Debug\Obj: [1]
     gpio.o                     102
     main.o                     280        7        7   47'856
     startup_stm32f103cx.o      448
@@ -548,7 +548,7 @@ exit                     0x800'02f7     0x4  Code  Gb  exit.o [2]
 main                     0x800'0167    0x7a  Code  Gb  main.o [1]
 
 
-[1] = E:\STM32_LEDANDBUTTONSTL\Debug\Obj
+[1] = E:\STM32_IR_TRACKING_PROJECT\Debug\Obj
 [2] = dl7M_tln.a
 [3] = rt7M_tl.a
 [4] = shb_l.a

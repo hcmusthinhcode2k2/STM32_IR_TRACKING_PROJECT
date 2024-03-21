@@ -1,4 +1,4 @@
 cortex_m3.pbi: E:\STM32_IR_TRACKING_PROJECT\source\cortex_m3.c \
-  E:\STM32_LEDANDBUTTONSTL\include\cortex_m3.h \
-  E:\STM32_LEDANDBUTTONSTL\include\common.h \
-  E:\STM32_LEDANDBUTTONSTL\include\define.h
+  E:\STM32_IR_TRACKING_PROJECT\include\cortex_m3.h \
+  E:\STM32_IR_TRACKING_PROJECT\include\common.h \
+  E:\STM32_IR_TRACKING_PROJECT\include\define.h

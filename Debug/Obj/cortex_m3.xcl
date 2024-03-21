@@ -10,17 +10,17 @@ cortex_m3.pbi
 -I
 E:\STM32_IR_TRACKING_PROJECT\source
 -I
-E:\STM32_LEDANDBUTTONSTL\include
+E:\STM32_IR_TRACKING_PROJECT\include
 -I
-E:\STM32_LEDANDBUTTONSTL\source
+E:\STM32_IR_TRACKING_PROJECT\source
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.3\arm\inc\c
 -I
-E:\STM32_LEDANDBUTTONSTL\include
+E:\STM32_IR_TRACKING_PROJECT\include
 -I
-E:\STM32_LEDANDBUTTONSTL\source
+E:\STM32_IR_TRACKING_PROJECT\source
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
