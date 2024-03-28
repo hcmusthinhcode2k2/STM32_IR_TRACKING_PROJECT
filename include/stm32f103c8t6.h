@@ -95,9 +95,9 @@ __root __no_init volatile ADC_BITBAND_TypeDef ADC2_BITBAND              @ BITBAN
 __root __no_init volatile ADVANCED_TIMER_TypeDef TIM1                   @ 0x40012C00;
 __root __no_init volatile ADVANCED_TIMER_BITBAND_TypeDef TIM1_BITBAND   @ BITBAND_PERIPHERAL_ADDRESS(0x40012C00, 0);
 
-#include <dma.h>
-__root __no_init volatile DMA_TypeDef DMA1                              @ 0x40020000;
-__root __no_init volatile DMA_BITBAND_TypeDef DMA1_BITBAND              @ BITBAND_PERIPHERAL_ADDRESS(0x40020000, 0);
+//#include <dma.h>
+//__root __no_init volatile DMA_TypeDef DMA1                              @ 0x40020000;
+//__root __no_init volatile DMA_BITBAND_TypeDef DMA1_BITBAND              @ BITBAND_PERIPHERAL_ADDRESS(0x40020000, 0);
 
 #include <rcc.h>
 __root __no_init volatile RCC_TypeDef RCC                               @ 0x40021000;

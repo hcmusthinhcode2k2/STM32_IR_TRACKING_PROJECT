@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userOverrides>
+    <override>
+        <path>E:\STM32_IR_TRACKING_PROJECT\include\dma.h</path>
+        <encoding>UTF-8</encoding>
+    </override>
+    <override>
+        <path>E:\STM32_IR_TRACKING_PROJECT\source\main.c</path>
+        <encoding>UTF-8</encoding>
+    </override>
+</userOverrides>
