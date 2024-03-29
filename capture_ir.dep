@@ -5,54 +5,54 @@
     <configuration>
         <name>Debug</name>
         <outputs>
+            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f103x8.icf</file>
+            <file>$PROJ_DIR$\include\crc.h</file>
+            <file>$PROJ_DIR$\source\gpio.c</file>
+            <file>$PROJ_DIR$\include\idwg.h</file>
+            <file>$PROJ_DIR$\source\cortex_m3.c</file>
+            <file>$PROJ_DIR$\include\gpio.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\common.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f103cx.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\include\rcc.h</file>
+            <file>$PROJ_DIR$\include\advanced_timer.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
+            <file>$PROJ_DIR$\include\i2c.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\gpio.xcl</file>
+            <file>$PROJ_DIR$\include\flash.h</file>
+            <file>$PROJ_DIR$\include\adc.h</file>
+            <file>$PROJ_DIR$\include\uart.h</file>
+            <file>$PROJ_DIR$\include\stm32f103c8t6.h</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\capture_ir.pbd</file>
+            <file>$PROJ_DIR$\include\cortex_m3.h</file>
             <file>$PROJ_DIR$\source\main.c</file>
             <file>$PROJ_DIR$\source\startup_stm32f103cx.s</file>
             <file>$PROJ_DIR$\Debug\Exe\capture_ir.out</file>
-            <file>$PROJ_DIR$\include\rtc.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\ST\stm32f103x8.icf</file>
-            <file>$PROJ_DIR$\include\uart.h</file>
-            <file>$PROJ_DIR$\source\gpio.c</file>
-            <file>$PROJ_DIR$\source\common.c</file>
-            <file>$PROJ_DIR$\source\cortex_m3.c</file>
-            <file>$PROJ_DIR$\include\stm32f103c8t6.h</file>
-            <file>$PROJ_DIR$\include\cortex_m3.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_stm32f103cx.o</file>
-            <file>$PROJ_DIR$\include\i2c.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio.o</file>
-            <file>$PROJ_DIR$\include\exti.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\capture_ir.pbd</file>
-            <file>$PROJ_DIR$\include\idwg.h</file>
             <file>$PROJ_DIR$\include\common.h</file>
-            <file>$PROJ_DIR$\include\gpio.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\common.xcl</file>
+            <file>$PROJ_DIR$\include\rtc.h</file>
+            <file>$PROJ_DIR$\include\exti.h</file>
             <file>$PROJ_DIR$\include\wwdg.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\gpio.xcl</file>
             <file>$PROJ_DIR$\include\pwr.h</file>
-            <file>$PROJ_DIR$\include\crc.h</file>
-            <file>$PROJ_DIR$\include\rcc.h</file>
-            <file>$PROJ_DIR$\include\advanced_timer.h</file>
-            <file>$PROJ_DIR$\include\flash.h</file>
-            <file>$PROJ_DIR$\include\adc.h</file>
+            <file>$PROJ_DIR$\source\common.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\cortex_m3.o</file>
+            <file>$PROJ_DIR$\include\general_timer.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\include\define.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\cortex_m3.xcl</file>
+            <file>$PROJ_DIR$\include\bkp.h</file>
             <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
             <file>$PROJ_DIR$\include\spi.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\cortex_m3.o</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\include\basic_timer.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\cortex_m3.xcl</file>
-            <file>$PROJ_DIR$\Debug\List\capture_ir.map</file>
-            <file>$PROJ_DIR$\include\general_timer.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\common.o</file>
-            <file>$PROJ_DIR$\include\base_timer.h</file>
-            <file>$PROJ_DIR$\source\system_stm32f1xx.c</file>
-            <file>$PROJ_DIR$\include\bkp.h</file>
             <file>$PROJ_DIR$\Debug\Obj\system_stm32f1xx.xcl</file>
-            <file>$PROJ_DIR$\include\afio.h</file>
-            <file>$PROJ_DIR$\include\define.h</file>
             <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
             <file>$PROJ_DIR$\include\bitband.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.xcl</file>
+            <file>$PROJ_DIR$\Debug\Obj\common.o</file>
+            <file>$PROJ_DIR$\Debug\List\capture_ir.map</file>
+            <file>$PROJ_DIR$\source\system_stm32f1xx.c</file>
+            <file>$PROJ_DIR$\include\basic_timer.h</file>
+            <file>$PROJ_DIR$\include\base_timer.h</file>
+            <file>$PROJ_DIR$\include\afio.h</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
         </outputs>
         <file>
@@ -60,92 +60,26 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 2 36</file>
+                    <file> 23 43</file>
                 </tool>
             </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\main.c</name>
-            <outputs>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 14</file>
-                </tool>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 48</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 46</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 9 10 19 44 47 34 37 39 3 22 18 31 5 12 41 24 43 16 20 29 27 26 28 25</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\startup_stm32f103cx.s</name>
-            <outputs>
-                <tool>
-                    <name>AARM</name>
-                    <file> 11</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\capture_ir.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 36</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 4 38 32 15 48 11 45 33 13 30</file>
-                </tool>
-            </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\source\gpio.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 15</file>
+                    <file> 11</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 23</file>
+                    <file> 13</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 20 44</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\common.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 38</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 21</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19 44</file>
+                    <file> 5 33</file>
                 </tool>
             </inputs>
         </file>
@@ -154,17 +88,83 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 32</file>
+                    <file> 30</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 35</file>
+                    <file> 34</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 19 44</file>
+                    <file> 20 24 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 20 24 33 40 45 31 46 25 27 3 37 16 12 35 28 47 26 5 15 10 9 14 1</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\startup_stm32f103cx.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\capture_ir.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 43</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 0 42 30 11 48 7 39 32 18 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\common.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24 33</file>
                 </tool>
             </inputs>
         </file>
@@ -173,13 +173,13 @@
             <outputs>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 42</file>
+                    <file> 38</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10 19 44</file>
+                    <file> 20 24 33</file>
                 </tool>
             </inputs>
         </file>
