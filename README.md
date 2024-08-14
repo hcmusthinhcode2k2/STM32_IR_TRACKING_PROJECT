@@ -1,4 +1,4 @@
-## personal project: "IR Signal Capture and Analysis using STM32F103C8T6 Microcontroller"
+## Personal Project: "IR Signal Capture and Analysis using STM32F103C8T6 Microcontroller"
 
 ### Description
 This project focuses on capturing and analyzing infrared (IR) signals using the STM32F103C8T6 microcontroller. The system processes IR signals from remote controls, decoding the data to perform specific actions. It utilizes a state machine approach for handling different stages of signal reception and interpretation, ensuring accurate capture and response to IR commands. The project is ideal for applications requiring remote control signal recognition, such as home automation, electronic device control, and more.
@@ -25,3 +25,5 @@ This project focuses on capturing and analyzing infrared (IR) signals using the 
 ![IR Space](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/khoangcachvoitrangthainghicuoicung.jpg)
 
 
+### Demo 
+![IR Demo](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/demo.mp4)
