@@ -16,9 +16,9 @@ This project focuses on capturing and analyzing infrared (IR) signals using the 
 ![Device Images]()
 
 #### Receive signal from TV remote
-![IR signal](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/batduocsonghongngoao.jpg)
+![IR signal](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/IR%20signal.jpg)
 #### Analyze a 3-byte transmission frame (25/8~3)
-![IR signal frame](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/1fametruyen3bit.jpg)
+![IR signal frame](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/1fame3byte.jpg)
 ###  Space of the decoration
 ![IR Space](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/khoangcachcuatrangthainghi.jpg)
 ###  space away from the wedding decorations
