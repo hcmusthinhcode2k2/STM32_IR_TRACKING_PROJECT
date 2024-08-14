@@ -26,4 +26,4 @@ This project focuses on capturing and analyzing infrared (IR) signals using the 
 
 
 ### Demo 
-![IR Demo](https://youtube.com/shorts/LjSY4zi-e4w?feature=share)
+ [YouTube video](https://www.youtube.com/shorts/LjSY4zi-e4w).
