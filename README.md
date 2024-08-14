@@ -26,4 +26,4 @@ This project focuses on capturing and analyzing infrared (IR) signals using the 
 
 
 ### Demo 
-![IR Demo](https://github.com/hcmusthinhcode2k2/STM32_IR_TRACKING_PROJECT/blob/main/images/demo.mp4)
+![IR Demo](https://youtube.com/shorts/LjSY4zi-e4w?feature=share)
